@@ -28,10 +28,10 @@ def create_svd_table(tokenizer, WE, WO_head, WV_head, num_rows, num_columns):
 
     print(tabulate(list(zip(*tokens))))
 
-layer_num = 0
+layer_num = 22
 head_num = 10
 num_rows = 20
-num_columns = 5
+num_columns = 7
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2-medium")
 model = AutoModelForCausalLM.from_pretrained("gpt2-medium")
